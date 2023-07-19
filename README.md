@@ -8,7 +8,7 @@
 
 # API Usage Guide
 
-This document serves as a guide to interact with the two services: `GET`, `POST`, `DELETE`, and `PATCH` using cURL on the command line.
+This document serves as a guide to interact with the different endpoint : `GET`, `POST`, `DELETE`, and `PATCH` using cURL on the command line.
 
 ## Project Controller API Usage
 
