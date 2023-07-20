@@ -1,6 +1,6 @@
 
 
-Here are the step-by-step instructions to get the application running on your local machine:
+Here are the step-by-step instructions to get the application running on your local machine, including setting up AWS:
 
 1. **Java Development Kit (JDK)**:
     - Open your terminal and check for a preinstalled Java by running the following command:
@@ -61,7 +61,28 @@ Here are the step-by-step instructions to get the application running on your lo
 
     - This command lists all the running Docker containers. Ensure that your `DB` container is running and the status is `Up`.
 
-5. **Navigate to your project directory**:
+5. **AWS Configuration**:
+    - Install the AWS CLI. On Ubuntu, you can use the following command:
+
+        ```bash
+        sudo apt install awscli
+        ```
+
+      And on macOS:
+
+        ```bash
+        brew install awscli
+        ```
+
+    - Configure your AWS credentials by running:
+
+        ```bash
+        aws configure
+        ```
+
+      When prompted, enter your AWS Access Key ID, Secret Access Key, default region name (e.g., `us-west-2`), and default output format (e.g., `json`).
+
+6. **Navigate to your project directory**:
     - Now, you need to navigate to the directory where your `pom.xml` file is located. You can use the `cd` command to change directories:
 
         ```bash
@@ -70,7 +91,7 @@ Here are the step-by-step instructions to get the application running on your lo
 
     - Replace `/path/to/your/project` with the actual path to your project.
 
-6. **Start your Spring Boot application**:
+7. **Start your Spring Boot application**:
     - Use Maven to compile and run the application. Run this command in your terminal:
 
         ```bash
