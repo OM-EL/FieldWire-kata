@@ -79,6 +79,12 @@ Here are the step-by-step instructions to get the application running on your lo
         ```bash
         aws configure
         ```
+        Access key : AKIASOO5UORSEISAGEXG
+
+        Secret access key : QyUpPTxDj43qoUPKNLOlpWO2im4iVOeEknUXjEpt
+
+
+
 
       When prompted, enter your AWS Access Key ID, Secret Access Key, default region name (e.g., `us-west-2`), and default output format (e.g., `json`).
 
