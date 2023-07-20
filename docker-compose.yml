@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    depends_on:
+      - mypostgresdb
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://mypostgresdb:5432/postgresdb
+      - SPRING_DATASOURCE_USERNAME=postgresuser
+      - SPRING_DATASOURCE_PASSWORD=postgrespw
+      - AWS_REGION=eu-west-1
+
+  mypostgresdb:
+    image: postgres
+    ports:
+      - 5455:5432
+    environment:
+      - POSTGRES_USER=postgresuser
+      - POSTGRES_PASSWORD=postgrespw
+      - POSTGRES_DB=postgresdb

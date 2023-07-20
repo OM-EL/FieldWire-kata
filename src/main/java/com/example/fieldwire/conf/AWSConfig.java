@@ -1,6 +1,7 @@
 package com.example.fieldwire.conf;
 
 
+import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.s3.S3Client;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
