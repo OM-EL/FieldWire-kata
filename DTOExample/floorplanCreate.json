@@ -1,6 +1,5 @@
 {
 
-    "id" : "dd9b5c76-6a8a-4e79-b01f-ea75304fa428",
-    "name" : "floorplan1",
-    "projectId" : "yourProjectUUID"
+    "name" : "floorplanFromCurl",
+    "projectId" : "yourProjectId"
 }

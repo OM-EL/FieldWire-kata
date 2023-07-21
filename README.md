@@ -17,7 +17,7 @@ This document serves as a guide to interact with the different endpoint : `GET`,
 To fetch a list of all projects, use the `GET` method:
 
 ```
-curl -X GET http://3.252.255.173:8080/api/v1/projects
+curl -X GET http://54.194.184.102:8080/api/v1/projects
 
 ```
 
@@ -26,7 +26,7 @@ curl -X GET http://3.252.255.173:8080/api/v1/projects
 To fetch a specific project by its UUID, use the `GET` method:
 
 ```
-curl -X GET http://3.252.255.173:8080/api/v1/projects/id
+curl -X GET http://54.194.184.102:8080/api/v1/projects/id
 
 ```
 
@@ -37,7 +37,7 @@ Replace `id` with the actual UUID of the project.
 To create a new project, use the `POST` method:
 
 ```
-curl -X POST -H "Content-Type: application/json" -d @/path/to/project.json http://3.252.255.173:8080/api/v1/projects
+curl -X POST -H "Content-Type: application/json" -d @/path/to/project.json http://54.194.184.102:8080/api/v1/projects
 
 ```
 
@@ -48,7 +48,7 @@ the **@** should not be deleted .
 **Example** : 
 
 ```
-curl -X POST -H "Content-Type: application/json" -d @/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOExample/projectCreation.json http://3.252.255.173:8080/api/v1/projects
+curl -X POST -H "Content-Type: application/json" -d @/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOExample/projectCreation.json http://54.194.184.102:8080/api/v1/projects
 ```
 
 ### Delete a Project
@@ -56,7 +56,7 @@ curl -X POST -H "Content-Type: application/json" -d @/Users/omarelhachimi/Deskto
 To delete a project by its UUID, use the `DELETE` method:
 
 ```
-curl -X DELETE http://3.252.255.173:8080/api/v1/projects/id
+curl -X DELETE http://54.194.184.102:8080/api/v1/projects/id
 
 ```
 
@@ -67,7 +67,7 @@ Replace `id` with the actual UUID of the project.
 To update an existing project, use the `PATCH` method:
 
 ```
-curl -X PATCH -H "Content-Type: application/json" -d @/path/to/project.json http://3.252.255.173:8080/api/v1/projects/id
+curl -X PATCH -H "Content-Type: application/json" -d @/path/to/project.json http://54.194.184.102:8080/api/v1/projects/id
 
 ```
 
@@ -82,7 +82,7 @@ Replace `id` with the actual UUID of the project and `/path/to/project.json` wit
 To fetch a list of all floorplans, use the `GET` method:
 
 ```
-curl -X GET http://3.252.255.173:8080/api/v1/floorplans
+curl -X GET http://54.194.184.102:8080/api/v1/floorplans
 
 ```
 
@@ -91,7 +91,7 @@ curl -X GET http://3.252.255.173:8080/api/v1/floorplans
 To fetch a specific floorplan by its UUID, use the `GET` method:
 
 ```
-curl -X GET http://3.252.255.173:8080/api/v1/floorplans/id
+curl -X GET http://54.194.184.102:8080/api/v1/floorplans/id
 
 ```
 
@@ -102,14 +102,14 @@ Replace `id` with the actual UUID of the floorplan.
 To create a new floorplan, use the `POST` method:
 
 ```
-curl -X POST -H "Content-Type: multipart/form-data" -F "floorplan=@/path/to/floorplan.json;type=application/json" -F "file=@/path/to/file.jpg" http://3.252.255.173:8080/api/v1/floorplans
+curl -X POST -H "Content-Type: multipart/form-data" -F "floorplan=@/path/to/floorplan.json;type=application/json" -F "file=@/path/to/file.jpg" http://54.194.184.102:8080/api/v1/floorplans
 
 ```
 
 **Example**
 
 ```
-curl -X POST -H "Content-Type: multipart/form-data" -F "floorplan=@/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOExample/floorplanCreate.json;type=application/json" -F "file=@/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOExample/floorplan1.jpg" http://3.252.255.173:8080/api/v1/floorplans
+curl -X POST -H "Content-Type: multipart/form-data" -F "floorplan=@/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOExample/floorplanCreate.json;type=application/json" -F "file=@/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOExample/floorplan1.jpg" http://54.194.184.102:8080/api/v1/floorplans
 
 ```
 
@@ -120,7 +120,7 @@ Replace `/path/to/floorplan.json` with the path to the JSON file containing floo
 To delete a floorplan by its UUID, use the `DELETE` method:
 
 ```
-curl -X DELETE http://3.252.255.173:8080/api/v1/floorplans/id
+curl -X DELETE http://54.194.184.102:8080/api/v1/floorplans/id
 
 ```
 
@@ -131,7 +131,7 @@ Replace `id` with the actual UUID of the floorplan.
 To update an existing floorplan, use the `PATCH` method:
 
 ```
-curl -X PATCH -H "Content-Type: multipart/form-data" -F "floorplan=@/path/to/floorplan.json;type=application/json" -F "file=@/path/to/file.jpg" http://3.252.255.173:8080/api/v1/floorplans/id
+curl -X PATCH -H "Content-Type: multipart/form-data" -F "floorplan=@/path/to/floorplan.json;type=application/json" -F "file=@/path/to/file.jpg" http://54.194.184.102:8080/api/v1/floorplans/id
 
 ```
 
@@ -141,7 +141,7 @@ curl -X PATCH -H "Content-Type: multipart/form-data" -F "floorplan=@/path/to/flo
 curl -X PATCH -H "Content-Type: multipart/form-data" -F "floorplan=@/Users/oma
 relhachimi/Desktop/Workplace/Fieldwire/DTOExample/floorplanCreate.json;type=appl
 ication/json" -F "file=@/Users/omarelhachimi/Desktop/Workplace/Fieldwire/DTOEx
-ample/floorplan1.jpg" http://3.252.255.173:8080/api/v1/floorplans/dd9b5c76-
+ample/floorplan1.jpg" http://54.194.184.102:8080/api/v1/floorplans/dd9b5c76-
 6a8a-4e79-b01f-ea75304fa428
 ```
 
